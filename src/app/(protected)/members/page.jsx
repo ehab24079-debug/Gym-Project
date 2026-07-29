@@ -1,7 +1,7 @@
 
-import MembersPageHeader from "@/components/members-components/MembersPageHeader";
-import MembersTable from "@/components/members-components/MembersList";
-import MembersToolbar from "@/components/members-components/MembersToolbar";
+import MembersPageHeader from "../../../components/members-components/MembersPageHeader";
+import MembersTable from "../../../components/members-components/MembersToolbar";
+import MembersToolbar from "../../../components/members-components/MembersTable";
 
 export default function page() {
   return (

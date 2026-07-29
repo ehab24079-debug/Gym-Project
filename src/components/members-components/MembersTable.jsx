@@ -26,7 +26,7 @@ export default function MembersTable() {
           <td>(555)1234567</td>
           <td>Annual</td>
           <td className="">
-            <div className="bg-[#ECFDF5FF] text-green-800/90 border border-green-200 rounded-2xl  text-center p-1">
+            <div className="bg-[#ECFDF5FF] text-green-800/90 border border-green-200 rounded-2xl  px-3 flex items-center ">
               Active
             </div>
           </td>
