@@ -1,4 +1,6 @@
-export default function MembersTable() {
+import Link from "next/link";
+
+export default function MembersTable({memberId}) {
   return (
     <div className="hidden lg:flex">
         <table className="table table-zebra ">
@@ -26,16 +28,18 @@ export default function MembersTable() {
           <td>(555)1234567</td>
           <td>Annual</td>
           <td className="">
-            <div className="bg-[#ECFDF5FF] text-green-800/90 border border-green-200 rounded-2xl  px-3 flex items-center ">
+            <div className="bg-[#ECFDF5FF] text-green-800/90 border border-green-200 rounded-2xl  text-center p-1">
               Active
             </div>
           </td>
           <td>Jan 12,2023</td>
-          <td>...</td>
+          <td className="text-start">
+            <Link href={`/members/${memberId}`}>...</Link>
+          </td>
         </tr>
         {/* row 2 */}
         <tr className="hover:bg-gray-200 ease-in transition-all duration-300">
-          <th>2</th>
+          <th>1</th>
           <td className="flex items-center gap-1.5">
             {" "}
             <div className="bg-gray-300 w-10 h-10 rounded-full "></div> Cy
@@ -49,11 +53,13 @@ export default function MembersTable() {
             </div>
           </td>
           <td>Jan 12,2023</td>
-          <td>...</td>
+          <td className="text-start">
+            <Link href={`/members/${memberId}`}>...</Link>
+          </td>
         </tr>
         {/* row 3 */}
         <tr className="hover:bg-gray-200 ease-in transition-all duration-300">
-          <th>3</th>
+          <th>1</th>
           <td className="flex items-center gap-1.5">
             {" "}
             <div className="bg-gray-300 w-10 h-10 rounded-full "></div> Cy
@@ -67,11 +73,13 @@ export default function MembersTable() {
             </div>
           </td>
           <td>Jan 12,2023</td>
-          <td>...</td>
+          <td className="text-start">
+            <Link href={`/members/${memberId}`}>...</Link>
+          </td>
         </tr>
         {/* row 4 */}
         <tr className="hover:bg-gray-200 ease-in transition-all duration-300">
-          <th>4</th>
+          <th>1</th>
           <td className="flex items-center gap-1.5">
             {" "}
             <div className="bg-gray-300 w-10 h-10 rounded-full "></div> Cy
@@ -85,11 +93,13 @@ export default function MembersTable() {
             </div>
           </td>
           <td>Jan 12,2023</td>
-          <td>...</td>
+          <td className="text-start">
+            <Link href={`/members/${memberId}`}>...</Link>
+          </td>
         </tr>
         {/* row 5 */}
         <tr className="hover:bg-gray-200 ease-in transition-all duration-300">
-          <th>5</th>
+          <th>1</th>
           <td className="flex items-center gap-1.5">
             {" "}
             <div className="bg-gray-300 w-10 h-10 rounded-full "></div> Cy
@@ -103,11 +113,13 @@ export default function MembersTable() {
             </div>
           </td>
           <td>Jan 12,2023</td>
-          <td>...</td>
+          <td className="text-start">
+            <Link href={`/members/${memberId}`}>...</Link>
+          </td>
         </tr>
         {/* row 6 */}
         <tr className="hover:bg-gray-200 ease-in transition-all duration-300">
-          <th>6</th>
+          <th>1</th>
           <td className="flex items-center gap-1.5">
             {" "}
             <div className="bg-gray-300 w-10 h-10 rounded-full "></div> Cy
@@ -121,11 +133,13 @@ export default function MembersTable() {
             </div>
           </td>
           <td>Jan 12,2023</td>
-          <td>...</td>
+          <td className="text-start">
+            <Link href={`/members/${memberId}`}>...</Link>
+          </td>
         </tr>
         {/* row 7 */}
         <tr className="hover:bg-gray-200 ease-in transition-all duration-300">
-          <th>7</th>
+          <th>1</th>
           <td className="flex items-center gap-1.5">
             {" "}
             <div className="bg-gray-300 w-10 h-10 rounded-full "></div> Cy
@@ -139,11 +153,13 @@ export default function MembersTable() {
             </div>
           </td>
           <td>Jan 12,2023</td>
-          <td>...</td>
+          <td className="text-start">
+            <Link href={`/members/${memberId}`}>...</Link>
+          </td>
         </tr>
         {/* row 8 */}
         <tr className="hover:bg-gray-200 ease-in transition-all duration-300">
-          <th>8</th>
+          <th>1</th>
           <td className="flex items-center gap-1.5">
             {" "}
             <div className="bg-gray-300 w-10 h-10 rounded-full "></div> Cy
@@ -157,8 +173,11 @@ export default function MembersTable() {
             </div>
           </td>
           <td>Jan 12,2023</td>
-          <td>...</td>
+          <td className="text-start">
+            <Link href={`/members/${memberId}`}>...</Link>
+          </td>
         </tr>
+        
       </tbody>
       <tfoot>
         <tr>

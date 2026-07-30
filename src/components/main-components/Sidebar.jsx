@@ -15,7 +15,7 @@ export default function Sidebar() {
     "flex items-center gap-2.5 text-[16px] font-medium leading-6 duration-200 text-gray-200 ";
   const pathname = usePathname();
   return (
-    <div className="group  w-20  hover:w-64  duration-300 md:w-[256px] h-dvh  bg-[#0F172AFF] shadow p-6 flex flex-col border-r-2 border-gray-100 overflow-y-auto  overflow-x-hidden">
+    <div className="group hidden lg:flex w-64  duration-300 md:w-[256px] h-dvh  bg-[#0F172AFF] shadow p-6  flex-col border-r-2 border-gray-100 overflow-hidden">
       <div className=" flex gap-2.5 items-center mb-11 ">
         <div className="flex gap-2 mb-7 items-center self-center">
           <div className="bg-[#256AF4FF] text-white p-2 rounded-lg ">
@@ -100,15 +100,15 @@ export default function Sidebar() {
           </span>
         </Link>
       </nav>
-      {/* Profile */}
+      {/* Footer */}
       <div className="flex flex-col gap-3 items-start mb-6 md:border-t-2 pt-3.5 md:border-[#432DD7] ">
         <div className="flex gap-1 text-gray-200 items-center ">
             <IoSettingsOutline className="min-w-6  " />
-            <p className=" leading-5 font-medium hidden md:flex">Setting</p>
+            <p className=" leading-5 font-medium  cursor-pointer">Setting</p>
         </div>
         <div className="flex gap-1 text-[#FB7185FF] items-center ">
             <MdLogout className="min-w-6  " />
-            <p className=" leading-5 font-medium  hidden md:flex">Logout</p>
+            <p className=" leading-5 font-medium  cursor-pointer">Logout</p>
         </div>
       </div> 
     </div>
